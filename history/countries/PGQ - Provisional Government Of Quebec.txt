@@ -1,0 +1,17 @@
+set_research_slots = 2
+set_stability = 0.12
+set_war_support = 1
+set_politics = {
+	ruling_party = democratic
+	last_election = "2050.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 12
+	communism = 2
+	fascism = 4
+	neutrality = 82
+}
+recruit_character = PGQ_Provsional_Quebec_Government
+add_manpower = 492000

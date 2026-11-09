@@ -1,0 +1,17 @@
+characters = {
+	PGQ_Provsional_Quebec_Government = {
+		name = PGQ_Provsional_Quebec_Government
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PGQ_Provsional_Quebec_Government
+				small = GFX_portrait_PGQ_Provsional_Quebec_Government_small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1965.1.1.1"
+			traits = { AFG_provisional_government_trait }
+			id = -1
+		}
+	}
+}
