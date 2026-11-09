@@ -101,4 +101,37 @@ focus_tree = {
 			focus = The_Dragon
 		}
 	}
+	focus = {
+		id = Another_Billion_To_Israel
+		icon = GFX_goal_unknown
+		x = 28
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Gazelle
+		}
+	}
+	focus = {
+		id = The_One_True_China
+		icon = GFX_goal_unknown
+		x = 22
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Dragon
+		}
+	}
+	focus = {
+		id = Joint_Training
+		icon = GFX_goal_unknown
+		x = 25
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Whipping_Up_Europe
+		}
+	}
 }
