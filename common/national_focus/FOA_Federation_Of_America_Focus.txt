@@ -44,6 +44,13 @@ focus_tree = {
 		cost = 1
 		completion_reward = {}
 		will_lead_to_war_with = Russia
+		prerequisite = {
+			focus = General_Report_2060
+		}
+		mutually_exclusive = {
+			focus = The_Dragon
+			focus = The_Gazelle
+		}
 	}
 	continuous_focus_position = {
 		x = 100000
@@ -67,17 +74,31 @@ focus_tree = {
 	focus = {
 		id = The_Dragon
 		icon = GFX_goal_unknown
-		x = 23
+		x = 22
 		y = 4
 		cost = 10
 		completion_reward = {}
+		prerequisite = {
+			focus = General_Report_2060
+		}
+		mutually_exclusive = {
+			focus = The_Bear
+			focus = The_Gazelle
+		}
 	}
 	focus = {
-		id = The_Gaezelle
+		id = The_Gazelle
 		icon = GFX_goal_unknown
-		x = 27
+		x = 28
 		y = 4
 		cost = 10
 		completion_reward = {}
+		prerequisite = {
+			focus = General_Report_2060
+		}
+		mutually_exclusive = {
+			focus = The_Bear
+			focus = The_Dragon
+		}
 	}
 }
