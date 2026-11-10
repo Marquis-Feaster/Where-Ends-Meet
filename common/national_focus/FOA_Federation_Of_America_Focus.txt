@@ -73,7 +73,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Dragon
-		icon = GFX_goal_unknown
+		icon = GFX_focus_The_Dragon
 		x = 22
 		y = 4
 		cost = 10
@@ -88,7 +88,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Gazelle
-		icon = GFX_goal_unknown
+		icon = GFX_focus_The_Gazelle
 		x = 28
 		y = 4
 		cost = 10
@@ -103,8 +103,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Another_Billion_To_Israel
-		icon = GFX_goal_unknown
-		x = 28
+		icon = GFX_focus_Another_Billion_To_Israel
+		x = 29
 		y = 5
 		cost = 10
 		completion_reward = {}
@@ -114,8 +114,8 @@ focus_tree = {
 	}
 	focus = {
 		id = The_One_True_China
-		icon = GFX_goal_unknown
-		x = 22
+		icon = GFX_focus_The_One_True_China
+		x = 21
 		y = 5
 		cost = 10
 		completion_reward = {}
