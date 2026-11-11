@@ -1,1 +1,1 @@
-When editing the files, delete the content you modified and replace it
+When editing the files, make sure it overrides and doesn't just make a copy in a seperate file
