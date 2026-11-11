@@ -1,0 +1,32 @@
+characters = {
+	FOA_Hunter_Dunson = {
+		name = FOA_Hunter_Dunson
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FOA_Hunter_Dunson
+				small = GFX_portrait_FOA_Hunter_Dunson_small
+			}
+			army = {
+				large = GFX_portrait_FOA_Hunter_Dunson_army
+				small = GFX_portrait_FOA_Hunter_Dunson_army_small
+			}
+			navy = {
+				large = GFX_portrait_FOA_Hunter_Dunson_navy
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1965.1.1.1"
+			traits = { BRA_anti_authoritarian DEN_fascist_militarist AST_military_expansionist AST_electrical_engineer }
+			id = -1
+		}
+		field_marshal = {
+			traits = { media_personality JAP_government_supporter engineer_officer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+}

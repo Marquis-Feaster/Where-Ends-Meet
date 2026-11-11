@@ -1,0 +1,2505 @@
+focus_tree = {
+	id = FOA_Federation_Of_America_Focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FOA
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	focus = {
+		id = Dawn_Of_A_New_Decade
+		icon = GFX_focus_Dawn_Of_A_New_Decade
+		x = 24
+		y = 3
+		cost = 1
+		completion_reward = {
+			add_ideas = { federal_ideals }
+		}
+	}
+	focus = {
+		id = General_Report_2060
+		icon = GFX_focus_General_Report_2060
+		x = 15
+		y = 4
+		cost = 2
+		prerequisite = {
+			focus = Dawn_Of_A_New_Decade
+		}
+		mutually_exclusive = {
+			focus = Failure_To_Report
+			focus = Dunsons_Dream
+		}
+		completion_reward = {
+			country_event = {
+				id = FOA_Events.1
+				days = 5
+				random_days = 2
+			}
+			mark_focus_tree_layout_dirty = yes
+			NOT = {
+				OR = {
+					has_completed_focus = Failure_To_Report
+					has_completed_focus = Dunsons_Dream
+				}
+			}
+		}
+	}
+	focus = {
+		id = The_Bear
+		icon = GFX_focus_The_Bear
+		x = 0
+		y = 2
+		cost = 1
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+		}
+		will_lead_to_war_with = Russia
+		mutually_exclusive = {
+			focus = The_Dragon
+			focus = The_Gazelle
+		}
+		available = {
+			always = no
+		}
+		relative_position_id = General_Report_2060
+		prerequisite = {
+			focus = General_Report_2060
+		}
+	}
+	continuous_focus_position = {
+		x = 100000
+		y = 100000
+	}
+	focus = {
+		id = Whipping_Up_Europe
+		icon = GFX_focus_Whipping_Up_Europe
+		x = 15
+		y = 7
+		cost = 10
+		completion_reward = {
+			army_experience = 20
+			navy_experience = 20
+			air_experience = 20
+		}
+		prerequisite = {
+			focus = The_Bear
+		}
+	}
+	focus = {
+		id = The_Dragon
+		icon = GFX_focus_The_Dragon
+		x = -3
+		y = 2
+		cost = 10
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			add_ideas = { Chinese_Intervention }
+		}
+		mutually_exclusive = {
+			focus = The_Bear
+			focus = The_Gazelle
+		}
+		available = {
+			always = no
+		}
+		relative_position_id = General_Report_2060
+		prerequisite = {
+			focus = General_Report_2060
+		}
+		will_lead_to_war_with = China
+	}
+	focus = {
+		id = The_Gazelle
+		icon = GFX_focus_The_Gazelle
+		x = 3
+		y = 2
+		cost = 10
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+		}
+		mutually_exclusive = {
+			focus = The_Bear
+			focus = The_Dragon
+		}
+		available = {
+			always = no
+		}
+		relative_position_id = General_Report_2060
+		prerequisite = {
+			focus = General_Report_2060
+		}
+		will_lead_to_war_with = The_Arabs
+	}
+	focus = {
+		id = Another_Billion_To_Israel
+		icon = GFX_focus_Another_Billion_To_Israel
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Gazelle
+		}
+		relative_position_id = The_Gazelle
+	}
+	focus = {
+		id = The_One_True_China
+		icon = GFX_focus_The_One_True_China
+		x = 12
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Dragon
+		}
+	}
+	focus = {
+		id = Operation_Thinkable
+		icon = GFX_focus_Operation_Thinkable
+		x = 15
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Whipping_Up_Europe
+		}
+	}
+	focus = {
+		id = The_True_World_Threat
+		icon = GFX_focus_The_True_World_Threat
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Another_Billion_To_Israel
+		}
+		relative_position_id = Another_Billion_To_Israel
+	}
+	focus = {
+		id = Legacy_Of_The_Boxers
+		icon = GFX_focus_Legacy_Of_The_Boxers
+		x = 12
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_One_True_China
+		}
+	}
+	focus = {
+		id = Failure_To_Report
+		icon = GFX_goal_unknown
+		x = 24
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Dawn_Of_A_New_Decade
+		}
+		mutually_exclusive = {
+			focus = General_Report_2060
+			focus = Dunsons_Dream
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = Dunsons_Dream
+					has_completed_focus = General_Report_2060
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	focus = {
+		id = Another_Way
+		icon = GFX_goal_unknown
+		x = 24
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Failure_To_Report
+		}
+	}
+	focus = {
+		id = Without_Dunson
+		icon = GFX_goal_unknown
+		x = 24
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Another_Way
+		}
+	}
+	focus = {
+		id = True_Unity
+		icon = GFX_goal_unknown
+		x = 21
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Without_Dunson
+		}
+		mutually_exclusive = {
+			focus = True_Dixies
+			focus = True_Commune
+		}
+	}
+	focus = {
+		id = True_Commune
+		icon = GFX_goal_unknown
+		x = 24
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Without_Dunson
+		}
+		mutually_exclusive = {
+			focus = True_Dixies
+			focus = True_Unity
+		}
+	}
+	focus = {
+		id = True_Dixies
+		icon = GFX_goal_unknown
+		x = 27
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Without_Dunson
+		}
+		mutually_exclusive = {
+			focus = True_Unity
+			focus = True_Commune
+		}
+	}
+	focus = {
+		id = Bring_Back_Southern_Supremacy
+		icon = GFX_goal_unknown
+		x = 27
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = True_Dixies
+		}
+	}
+	focus = {
+		id = Support_The_CCP
+		icon = GFX_goal_unknown
+		x = 24
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = True_Commune
+		}
+	}
+	focus = {
+		id = Model_After_Proval
+		icon = GFX_goal_unknown
+		x = 21
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = True_Unity
+		}
+	}
+	focus = {
+		id = Denounce_Taipai
+		icon = GFX_goal_unknown
+		x = 23
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Support_The_CCP
+		}
+	}
+	focus = {
+		id = Loyalty_To_Xia
+		icon = GFX_goal_unknown
+		x = 25
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Support_The_CCP
+		}
+	}
+	focus = {
+		id = Support_Islam
+		icon = GFX_goal_unknown
+		x = 27
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Bring_Back_Southern_Supremacy
+		}
+	}
+	focus = {
+		id = Invite_The_Bear
+		icon = GFX_goal_unknown
+		x = 21
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Model_After_Proval
+		}
+	}
+	focus = {
+		id = The_Bear_And_The_Eagle
+		icon = GFX_goal_unknown
+		x = 21
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Invite_The_Bear
+		}
+	}
+	focus = {
+		id = Show_Europe_True_Unity
+		icon = GFX_goal_unknown
+		x = 20
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Bear_And_The_Eagle
+		}
+	}
+	focus = {
+		id = Free_Palestine
+		icon = GFX_goal_unknown
+		x = 27
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Support_Islam
+		}
+	}
+	focus = {
+		id = Reviving_Old_British_Promises
+		icon = GFX_goal_unknown
+		x = 28
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Free_Palestine
+		}
+	}
+	focus = {
+		id = Operation_49
+		icon = GFX_goal_unknown
+		x = 23
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Denounce_Taipai
+		}
+	}
+	focus = {
+		id = Cut_Off_Japan
+		icon = GFX_goal_unknown
+		x = 25
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Loyalty_To_Xia
+		}
+	}
+	focus = {
+		id = Supress_Anti_Chinese_Media
+		icon = GFX_goal_unknown
+		x = 24
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Operation_49
+		}
+		prerequisite = {
+			focus = Cut_Off_Japan
+		}
+	}
+	focus = {
+		id = Masters_Of_Humanity
+		icon = GFX_goal_unknown
+		x = 24
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Reviving_Old_British_Promises
+			focus = Show_Europe_True_Unity
+			focus = Supress_Anti_Chinese_Media
+		}
+		available = {
+			controls_state = 6
+			controls_state = 524
+			controls_state = 291
+		}
+	}
+	focus = {
+		id = Dunsons_Dream
+		icon = GFX_goal_unknown
+		x = 35
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Dawn_Of_A_New_Decade
+		}
+		mutually_exclusive = {
+			focus = Failure_To_Report
+			focus = General_Report_2060
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = Failure_To_Report
+					has_completed_focus = General_Report_2060
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	focus = {
+		id = A_Crazy_Idea
+		icon = GFX_goal_unknown
+		x = 35
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Dunsons_Dream
+		}
+	}
+	focus = {
+		id = Ban_The_REPUBLICANS
+		icon = GFX_goal_unknown
+		x = 34
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = A_Crazy_Idea
+		}
+	}
+	focus = {
+		id = Ban_The_DEMOCRATS
+		icon = GFX_goal_unknown
+		x = 36
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = A_Crazy_Idea
+		}
+	}
+	focus = {
+		id = Single_Party_Politics
+		icon = GFX_goal_unknown
+		x = 35
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Ban_The_DEMOCRATS
+		}
+		prerequisite = {
+			focus = Ban_The_REPUBLICANS
+		}
+	}
+	focus = {
+		id = Censor_The_Media
+		icon = GFX_goal_unknown
+		x = 35
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Single_Party_Politics
+		}
+	}
+	focus = {
+		id = Federation_First
+		icon = GFX_goal_unknown
+		x = 35
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Censor_The_Media
+		}
+	}
+	focus = {
+		id = Refuse_To_Recognize_The_EU
+		icon = GFX_goal_unknown
+		x = 34
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Federation_First
+		}
+	}
+	focus = {
+		id = Refuse_To_Recognize_Russia
+		icon = GFX_goal_unknown
+		x = 32
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Federation_First
+		}
+	}
+	focus = {
+		id = Refuse_To_Recognize_China
+		icon = GFX_goal_unknown
+		x = 30
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Federation_First
+		}
+	}
+	focus = {
+		id = Refuse_To_Recognize_Taiwan
+		icon = GFX_goal_unknown
+		x = 36
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Federation_First
+		}
+	}
+	focus = {
+		id = Refuse_To_Recognize_Arabia
+		icon = GFX_goal_unknown
+		x = 38
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Federation_First
+		}
+	}
+	focus = {
+		id = Refuse_To_Recognize_Israel
+		icon = GFX_goal_unknown
+		x = 40
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Federation_First
+		}
+	}
+	focus = {
+		id = The_Only_Country_In_The_World
+		icon = GFX_goal_unknown
+		x = 35
+		y = 13
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Refuse_To_Recognize_Arabia
+		}
+		prerequisite = {
+			focus = Refuse_To_Recognize_China
+		}
+		prerequisite = {
+			focus = Refuse_To_Recognize_Israel
+		}
+		prerequisite = {
+			focus = Refuse_To_Recognize_Russia
+		}
+		prerequisite = {
+			focus = Refuse_To_Recognize_Taiwan
+		}
+		prerequisite = {
+			focus = Refuse_To_Recognize_The_EU
+		}
+	}
+	focus = {
+		id = Claim_The_World
+		icon = GFX_goal_unknown
+		x = 35
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Only_Country_In_The_World
+		}
+	}
+	focus = {
+		id = The_Grand_Old_War
+		icon = GFX_goal_unknown
+		x = 35
+		y = 15
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Claim_The_World
+		}
+	}
+	focus = {
+		id = A_New_Status_Quo
+		icon = GFX_goal_unknown
+		x = 35
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Grand_Old_War
+		}
+	}
+	focus = {
+		id = Clean_Up_The_Left_Overs
+		icon = GFX_goal_unknown
+		x = 35
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = A_New_Status_Quo
+		}
+	}
+	focus = {
+		id = No_Man_Left_Behind
+		icon = GFX_focus_No_Man_Left_Behind
+		x = 15
+		y = 15
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = All_To_Israel
+			focus = Bearing_The_Cold
+			focus = Focus_All_In_On_Asia
+		}
+	}
+	focus = {
+		id = Revigourate_Europe
+		icon = GFX_focus_Revigourate_Europe
+		x = 12
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = No_Man_Left_Behind
+		}
+		available = {
+			OR = {
+				has_completed_focus = All_To_Israel
+				has_completed_focus = Focus_All_In_On_Asia
+			}
+		}
+	}
+	focus = {
+		id = Save_Taiwan
+		icon = GFX_focus_Save_Taiwan
+		x = 15
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = No_Man_Left_Behind
+		}
+		available = {
+			OR = {
+				has_completed_focus = All_To_Israel
+				has_completed_focus = Bearing_The_Cold
+			}
+		}
+	}
+	focus = {
+		id = Resume_Israeli_Funding
+		icon = GFX_focus_Resume_Israeli_Funding
+		x = 18
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = No_Man_Left_Behind
+		}
+		available = {
+			OR = {
+				has_completed_focus = Bearing_The_Cold
+				has_completed_focus = Focus_All_In_On_Asia
+			}
+		}
+	}
+	focus = {
+		id = Pull_Out_Of_Asia
+		icon = GFX_focus_Pull_Out_Of_Asia
+		x = 16
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Operation_Thinkable
+		}
+	}
+	focus = {
+		id = Cut_Israeli_Funding
+		icon = GFX_focus_Cut_Israeli_Funding
+		x = 14
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Operation_Thinkable
+		}
+	}
+	focus = {
+		id = Missile_Strikes
+		icon = GFX_focus_Missile_Strikes
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_True_World_Threat
+		}
+		relative_position_id = The_True_World_Threat
+	}
+	focus = {
+		id = Fund_New_Drones
+		icon = GFX_focus_Fund_New_Drones
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Missile_Strikes
+		}
+		relative_position_id = Missile_Strikes
+	}
+	focus = {
+		id = Saving_The_Holy_Land
+		icon = GFX_focus_Saving_The_Holy_Land
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Fund_New_Drones
+		}
+		relative_position_id = Fund_New_Drones
+	}
+	focus = {
+		id = Revenge_For_49
+		icon = GFX_focus_Revenge_For_49
+		x = 12
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Jungle_Tactics
+		}
+	}
+	focus = {
+		id = Jungle_Tactics
+		icon = GFX_focus_Jungle_Tactics
+		x = 12
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Increased_Carrier_Output
+		}
+	}
+	focus = {
+		id = Increased_Carrier_Output
+		icon = GFX_focus_Increased_Carrier_Output
+		x = 12
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Legacy_Of_The_Boxers
+		}
+	}
+	focus = {
+		id = Blockade_The_Russians
+		icon = GFX_focus_Blockade_The_Russians
+		x = 15
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Cut_Israeli_Funding
+		}
+		prerequisite = {
+			focus = Pull_Out_Of_Asia
+		}
+	}
+	focus = {
+		id = Operation_Black_Gold
+		icon = GFX_focus_Operation_Black_Gold
+		x = 15
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Blockade_The_Russians
+		}
+	}
+	focus = {
+		id = Bearing_The_Cold
+		icon = GFX_focus_Bearing_The_Cold
+		x = 15
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Operation_Black_Gold
+		}
+	}
+	focus = {
+		id = Focus_All_In_On_Asia
+		icon = GFX_focus_Focus_All_In_On_Asia
+		x = 12
+		y = 13
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Revenge_For_49
+		}
+	}
+	focus = {
+		id = All_To_Israel
+		icon = GFX_focus_All_To_Israel
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Saving_The_Holy_Land
+		}
+		relative_position_id = Saving_The_Holy_Land
+	}
+	focus = {
+		id = The_Federal_Address
+		icon = GFX_focus_The_Federal_Address
+		x = 12
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Revigourate_Europe
+		}
+	}
+	focus = {
+		id = Dunsons_Revenge
+		icon = GFX_focus_Dunsons_Revenge
+		x = 12
+		y = 18
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Federal_Address
+		}
+	}
+	focus = {
+		id = Operation_Falling_Star
+		icon = GFX_focus_Operation_Falling_Star
+		x = 15
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Save_Taiwan
+		}
+	}
+	focus = {
+		id = Dunsons_Plan
+		icon = GFX_focus_Dunsons_Plan
+		x = 15
+		y = 18
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Operation_Falling_Star
+		}
+	}
+	focus = {
+		id = Dunson_Of_Arabia
+		icon = GFX_focus_Dunson_Of_Arabia
+		x = 18
+		y = 18
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Personnal_Ties
+		}
+	}
+	focus = {
+		id = Personnal_Ties
+		icon = GFX_focus_Personnal_Ties
+		x = 18
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Resume_Israeli_Funding
+		}
+	}
+	focus = {
+		id = State_Of_The_Military
+		icon = GFX_goal_unknown
+		x = 50
+		y = 4
+		cost = 1
+		completion_reward = {}
+		prerequisite = {
+			focus = Dawn_Of_A_New_Decade
+		}
+	}
+	focus = {
+		id = The_Army
+		icon = GFX_goal_unknown
+		x = 45
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = State_Of_The_Military
+		}
+	}
+	focus = {
+		id = The_Navy
+		icon = GFX_goal_unknown
+		x = 48
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = State_Of_The_Military
+		}
+	}
+	focus = {
+		id = The_Airforce
+		icon = GFX_goal_unknown
+		x = 56
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = State_Of_The_Military
+		}
+	}
+	focus = {
+		id = The_Marines
+		icon = GFX_goal_unknown
+		x = 51
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = State_Of_The_Military
+		}
+	}
+	focus = {
+		id = The_Space_Force
+		icon = GFX_goal_unknown
+		x = 59
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = State_Of_The_Military
+		}
+	}
+	focus = {
+		id = Invest_In_New_Infantry_Equipment
+		icon = GFX_goal_unknown
+		x = 42
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Army
+		}
+	}
+	focus = {
+		id = Subsidise_New_Factorys
+		icon = GFX_goal_unknown
+		x = 42
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Invest_In_New_Infantry_Equipment
+		}
+	}
+	focus = {
+		id = New_Motorised_Infantry
+		icon = GFX_goal_unknown
+		x = 44
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Army
+		}
+	}
+	focus = {
+		id = Exo_Suits
+		icon = GFX_goal_unknown
+		x = 44
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = New_Motorised_Infantry
+		}
+	}
+	focus = {
+		id = Elevate_Lima_Army_Tank_Plant
+		icon = GFX_goal_unknown
+		x = 44
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Exo_Suits
+		}
+	}
+	focus = {
+		id = Elevate_Sikorsky_Aircraft
+		icon = GFX_goal_unknown
+		x = 46
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = UH70_Nighthawk
+		}
+	}
+	focus = {
+		id = Elevate_SIG_Sauer
+		icon = GFX_goal_unknown
+		x = 42
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Subsidise_New_Factorys
+		}
+	}
+	focus = {
+		id = Army_Corp_Of_Helicopters
+		icon = GFX_goal_unknown
+		x = 46
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Army
+		}
+	}
+	focus = {
+		id = UH70_Nighthawk
+		icon = GFX_goal_unknown
+		x = 46
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Army_Corp_Of_Helicopters
+		}
+	}
+	focus = {
+		id = Intensify_Nighttime_Operations
+		icon = GFX_goal_unknown
+		x = 42
+		y = 13
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = New_Night_Vision_Goggles
+		}
+		prerequisite = {
+			focus = Thermal_Weapon_Sights
+		}
+		prerequisite = {
+			focus = Mass_Adoption_Of_Silencers
+		}
+	}
+	focus = {
+		id = New_Night_Vision_Goggles
+		icon = GFX_goal_unknown
+		x = 42
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Elevate_SIG_Sauer
+		}
+	}
+	focus = {
+		id = Thermal_Weapon_Sights
+		icon = GFX_goal_unknown
+		x = 44
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Elevate_Lima_Army_Tank_Plant
+		}
+	}
+	focus = {
+		id = Mass_Adoption_Of_Silencers
+		icon = GFX_goal_unknown
+		x = 46
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Elevate_Sikorsky_Aircraft
+		}
+	}
+	focus = {
+		id = New_Carrier_Varients
+		icon = GFX_goal_unknown
+		x = 48
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Navy
+		}
+	}
+	focus = {
+		id = USS_Dunson
+		icon = GFX_goal_unknown
+		x = 48
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = New_Carrier_Varients
+		}
+	}
+	focus = {
+		id = New_Amphibious_Tactics
+		icon = GFX_goal_unknown
+		x = 51
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Marines
+		}
+	}
+	focus = {
+		id = Leap_Frog_Transports
+		icon = GFX_goal_unknown
+		x = 50
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = New_Amphibious_Tactics
+		}
+		prerequisite = {
+			focus = New_Carrier_Varients
+		}
+	}
+	focus = {
+		id = Cold_Sea_Operations
+		icon = GFX_goal_unknown
+		x = 48
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Leap_Frog_Transports
+		}
+		mutually_exclusive = {
+			focus = Tropical_Sea_Operations
+			focus = Warm_Sea_Operations
+		}
+	}
+	focus = {
+		id = Warm_Sea_Operations
+		icon = GFX_goal_unknown
+		x = 50
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Leap_Frog_Transports
+		}
+		mutually_exclusive = {
+			focus = Cold_Sea_Operations
+			focus = Tropical_Sea_Operations
+		}
+	}
+	focus = {
+		id = Tropical_Sea_Operations
+		icon = GFX_goal_unknown
+		x = 52
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Leap_Frog_Transports
+		}
+		mutually_exclusive = {
+			focus = Cold_Sea_Operations
+			focus = Warm_Sea_Operations
+		}
+	}
+	focus = {
+		id = Legacy_Of_The_Boxer_Rebellion
+		icon = GFX_goal_unknown
+		x = 53
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Marines
+		}
+		available = {
+			has_completed_focus = The_Dragon
+		}
+	}
+	focus = {
+		id = Legacy_Of_The_Russian_Civil_War
+		icon = GFX_goal_unknown
+		x = 40
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Army
+		}
+		available = {
+			has_completed_focus = Operation_Thinkable
+		}
+	}
+	focus = {
+		id = Naval_Priority
+		icon = GFX_goal_unknown
+		x = 50
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Expand_The_NROTC
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = Army_Priority
+					has_completed_focus = Air_Priority
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	focus = {
+		id = Army_Priority
+		icon = GFX_goal_unknown
+		x = 42
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Intensify_Nighttime_Operations
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = Naval_Priority
+					has_completed_focus = Air_Priority
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	focus = {
+		id = Expansion_Of_The_Naval_Academy
+		icon = GFX_goal_unknown
+		x = 50
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Cold_Sea_Operations
+			focus = Tropical_Sea_Operations
+			focus = Warm_Sea_Operations
+		}
+	}
+	focus = {
+		id = Expand_The_NROTC
+		icon = GFX_goal_unknown
+		x = 50
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Expansion_Of_The_Naval_Academy
+		}
+	}
+	focus = {
+		id = Nuclear_Planning
+		icon = GFX_goal_unknown
+		x = 59
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Space_Force
+		}
+	}
+	focus = {
+		id = The_F52_Fox
+		icon = GFX_goal_unknown
+		x = 56
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Airforce
+		}
+	}
+	focus = {
+		id = Joint_Naval_Airforce_Operations
+		icon = GFX_goal_unknown
+		x = 54
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Naval_Integration
+		}
+		prerequisite = {
+			focus = USS_Dunson
+		}
+	}
+	focus = {
+		id = Naval_Integration
+		icon = GFX_goal_unknown
+		x = 56
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_F52_Fox
+		}
+	}
+	focus = {
+		id = Legacy_Of_Iraq
+		icon = GFX_goal_unknown
+		x = 54
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Move_Drone_Command_Under_The_Airforce
+		}
+		available = {
+			has_completed_focus = The_True_World_Threat
+		}
+	}
+	focus = {
+		id = Satelite_Monitoring
+		icon = GFX_goal_unknown
+		x = 57
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Nuclear_Planning
+		}
+		prerequisite = {
+			focus = Naval_Integration
+		}
+	}
+	focus = {
+		id = Move_Drone_Command_Under_The_Airforce
+		icon = GFX_goal_unknown
+		x = 56
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Satelite_Monitoring
+		}
+	}
+	focus = {
+		id = Improved_Drones
+		icon = GFX_goal_unknown
+		x = 56
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Move_Drone_Command_Under_The_Airforce
+		}
+	}
+	focus = {
+		id = New_Age_Of_Spies
+		icon = GFX_goal_unknown
+		x = 58
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Nuclear_Planning
+		}
+		prerequisite = {
+			focus = Satelite_Monitoring
+		}
+	}
+	focus = {
+		id = The_Eye_Of_God
+		icon = GFX_goal_unknown
+		x = 58
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = New_Age_Of_Spies
+		}
+	}
+	focus = {
+		id = Nuclear_Air_To_Air_Missiles
+		icon = GFX_goal_unknown
+		x = 56
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Improved_Drones
+		}
+	}
+	focus = {
+		id = Air_Priority
+		icon = GFX_goal_unknown
+		x = 56
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Nuclear_Air_To_Air_Missiles
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = Naval_Priority
+					has_completed_focus = Army_Priority
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	focus = {
+		id = The_Green_Berets
+		icon = GFX_goal_unknown
+		x = 43
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Army_Priority
+		}
+	}
+	focus = {
+		id = The_Seals
+		icon = GFX_goal_unknown
+		x = 48
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Naval_Priority
+		}
+	}
+	focus = {
+		id = The_PJs
+		icon = GFX_goal_unknown
+		x = 58
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Air_Priority
+		}
+	}
+	focus = {
+		id = Armored_Focus
+		icon = GFX_goal_unknown
+		x = 45
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Army_Priority
+		}
+	}
+	focus = {
+		id = Infantry_mechanized_Suits
+		icon = GFX_goal_unknown
+		x = 45
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Armored_Focus
+		}
+	}
+	focus = {
+		id = Expanded_Special_Operations
+		icon = GFX_goal_unknown
+		x = 43
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Green_Berets
+		}
+		prerequisite = {
+			focus = The_Rangers
+		}
+	}
+	focus = {
+		id = Large_Scale_Naval_Invasions
+		icon = GFX_goal_unknown
+		x = 50
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Naval_Priority
+		}
+	}
+	focus = {
+		id = The_Many_The_Proud
+		icon = GFX_goal_unknown
+		x = 52
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Naval_Priority
+		}
+	}
+	focus = {
+		id = Naval_Drone_Operations
+		icon = GFX_goal_unknown
+		x = 48
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Seals
+		}
+	}
+	focus = {
+		id = A_Airforce_To_Block_The_Sun
+		icon = GFX_goal_unknown
+		x = 56
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Air_Priority
+		}
+	}
+	focus = {
+		id = Invest_In_Lockheed
+		icon = GFX_goal_unknown
+		x = 52
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Many_The_Proud
+		}
+	}
+	focus = {
+		id = Air_Above_All
+		icon = GFX_goal_unknown
+		x = 56
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = A_Airforce_To_Block_The_Sun
+		}
+	}
+	focus = {
+		id = The_Rangers
+		icon = GFX_goal_unknown
+		x = 41
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Army_Priority
+		}
+	}
+	focus = {
+		id = 2060_Election_Results
+		icon = GFX_goal_unknown
+		x = 66
+		y = 3
+		cost = 10
+		completion_reward = {}
+	}
+	focus = {
+		id = The_Dunson_Administration
+		icon = GFX_goal_unknown
+		x = 66
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = 2060_Election_Results
+		}
+	}
+	focus = {
+		id = Expanded_Police_Funding_Bill
+		icon = GFX_goal_unknown
+		x = 64
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Executive_Order_22
+		}
+	}
+	focus = {
+		id = Tax_Cut_Bill
+		icon = GFX_goal_unknown
+		x = 68
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = War_Preperation_Bill
+		}
+	}
+	focus = {
+		id = Economic_Control_Bill
+		icon = GFX_goal_unknown
+		x = 66
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Dunson_Administration
+		}
+	}
+	focus = {
+		id = Executive_Order_22
+		icon = GFX_goal_unknown
+		x = 64
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Dunson_Administration
+		}
+	}
+	focus = {
+		id = War_Preperation_Bill
+		icon = GFX_goal_unknown
+		x = 68
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Dunson_Administration
+		}
+	}
+	focus = {
+		id = Emergency_Powers_Act
+		icon = GFX_goal_unknown
+		x = 66
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Economic_Control_Bill
+		}
+	}
+	focus = {
+		id = 2064_Election_Results
+		icon = GFX_goal_unknown
+		x = 66
+		y = 9
+		cost = 10
+		completion_reward = {}
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = The_Dunson_Administrations_Second_Term
+		icon = GFX_goal_unknown
+		x = 64
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = 2064_Election_Results
+		}
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = The_Harr_Administration
+		icon = GFX_goal_unknown
+		x = 66
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = 2064_Election_Results
+		}
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = The_Trump_Administration
+		icon = GFX_goal_unknown
+		x = 68
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = 2064_Election_Results
+		}
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = Repeal_The_22nd_Amendment
+		icon = GFX_goal_unknown
+		x = 64
+		y = 13
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Massive_Economic_Reform
+		}
+	}
+	focus = {
+		id = Massive_Economic_Reform
+		icon = GFX_goal_unknown
+		x = 64
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Dunson_Administrations_Second_Term
+		}
+	}
+	focus = {
+		id = Pull_The_Federations_In
+		icon = GFX_goal_unknown
+		x = 64
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Repeal_The_22nd_Amendment
+		}
+	}
+	focus = {
+		id = Socialist_Policys
+		icon = GFX_goal_unknown
+		x = 66
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Condem_Dunson
+		}
+	}
+	focus = {
+		id = Slander_Unity
+		icon = GFX_goal_unknown
+		x = 66
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Harr_Administration
+		}
+	}
+	focus = {
+		id = Condem_Dunson
+		icon = GFX_goal_unknown
+		x = 66
+		y = 13
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Slander_Unity
+		}
+	}
+	focus = {
+		id = Reform_Rollback_Bill
+		icon = GFX_goal_unknown
+		x = 68
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Trump_Administration
+		}
+	}
+	focus = {
+		id = Reform_Unity
+		icon = GFX_goal_unknown
+		x = 68
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Republican_Unity_Merge
+		}
+	}
+	focus = {
+		id = Republican_Unity_Merge
+		icon = GFX_goal_unknown
+		x = 68
+		y = 13
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Reform_Rollback_Bill
+		}
+	}
+	focus = {
+		id = Dunsons_Third_Term
+		icon = GFX_goal_unknown
+		x = 64
+		y = 18
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_2068_Election
+		}
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = The_Harr_Administrations_Second_Term
+		icon = GFX_goal_unknown
+		x = 66
+		y = 18
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_2068_Election
+		}
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = The_Vance_Administration
+		icon = GFX_goal_unknown
+		x = 68
+		y = 18
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_2068_Election
+		}
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = The_2068_Election
+		icon = GFX_goal_unknown
+		x = 66
+		y = 16
+		cost = 10
+		completion_reward = {}
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = One_Party_Rule
+		icon = GFX_goal_unknown
+		x = 64
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Dunsons_Third_Term
+		}
+	}
+	focus = {
+		id = Arrest_Dunson
+		icon = GFX_goal_unknown
+		x = 66
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Harr_Administrations_Second_Term
+		}
+	}
+	focus = {
+		id = Reinstate_The_22nd_Amendment
+		icon = GFX_goal_unknown
+		x = 66
+		y = 20
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Arrest_Dunson
+		}
+	}
+	focus = {
+		id = Tariff_Increases
+		icon = GFX_goal_unknown
+		x = 68
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Vance_Administration
+		}
+	}
+	focus = {
+		id = End_Of_Democracy
+		icon = GFX_goal_unknown
+		x = 64
+		y = 20
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = One_Party_Rule
+		}
+	}
+	focus = {
+		id = Support_Russia
+		icon = GFX_goal_unknown
+		x = 68
+		y = 20
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Tariff_Increases
+		}
+	}
+	focus = {
+		id = Economic_Prosperity
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		cost = 10
+		completion_reward = {}
+	}
+	focus = {
+		id = Pump_Money_Into_The_Military
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Economic_Prosperity
+		}
+	}
+	focus = {
+		id = The_American_Industrial_Complex
+		icon = GFX_goal_unknown
+		x = 2
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Pump_Money_Into_The_Military
+		}
+	}
+	focus = {
+		id = Invest_In_Asian_Technology
+		icon = GFX_goal_unknown
+		x = 5
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Economic_Prosperity
+		}
+	}
+	focus = {
+		id = The_Second_Chinese_Civil_War
+		icon = GFX_goal_unknown
+		x = 7
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Economic_Prosperity
+		}
+	}
+	focus = {
+		id = Invest_In_Taiwan
+		icon = GFX_goal_unknown
+		x = 6
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Invest_In_Asian_Technology
+		}
+		prerequisite = {
+			focus = The_Second_Chinese_Civil_War
+		}
+	}
+	focus = {
+		id = Invest_In_China
+		icon = GFX_goal_unknown
+		x = 8
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Second_Chinese_Civil_War
+		}
+	}
+	focus = {
+		id = More_Jobs_More_Money
+		icon = GFX_goal_unknown
+		x = 2
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_American_Industrial_Complex
+		}
+	}
+	focus = {
+		id = Yes_Tariffs_No_Taxes
+		icon = GFX_goal_unknown
+		x = 4
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Pump_Money_Into_The_Military
+		}
+		prerequisite = {
+			focus = Invest_In_Asian_Technology
+		}
+	}
+	focus = {
+		id = Japanese_Cooperation
+		icon = GFX_goal_unknown
+		x = 6
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Invest_In_Taiwan
+		}
+	}
+	focus = {
+		id = Russian_Oil
+		icon = GFX_goal_unknown
+		x = 8
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Invest_In_China
+		}
+	}
+	focus = {
+		id = Invite_Persian_Leaders
+		icon = GFX_goal_unknown
+		x = 8
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Russian_Oil
+		}
+	}
+	focus = {
+		id = Federal_Oil_Deal
+		icon = GFX_goal_unknown
+		x = 8
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Invite_Persian_Leaders
+		}
+	}
+	focus = {
+		id = The_American_Dream
+		icon = GFX_goal_unknown
+		x = 4
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Yes_Tariffs_No_Taxes
+		}
+	}
+	focus = {
+		id = Bubble_I_Dont_Think_So
+		icon = GFX_goal_unknown
+		x = 0
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Drone_Bubble
+		}
+	}
+	focus = {
+		id = Invest_In_Drones
+		icon = GFX_goal_unknown
+		x = 0
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Bubble_I_Dont_Think_So
+		}
+	}
+	focus = {
+		id = Dakota_Data_Centers
+		icon = GFX_goal_unknown
+		x = 1
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Invest_In_Drones
+		}
+		prerequisite = {
+			focus = More_Jobs_More_Money
+		}
+	}
+	focus = {
+		id = Increase_Health_spending
+		icon = GFX_goal_unknown
+		x = 5
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_American_Dream
+		}
+		prerequisite = {
+			focus = Japanese_Cooperation
+		}
+	}
+	focus = {
+		id = Invest_In_Education
+		icon = GFX_goal_unknown
+		x = 2
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Dakota_Data_Centers
+		}
+	}
+	focus = {
+		id = Peace_On_Poverty
+		icon = GFX_goal_unknown
+		x = 0
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Dakota_Data_Centers
+		}
+	}
+	focus = {
+		id = The_Drone_Bubble
+		icon = GFX_goal_unknown
+		x = 0
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Economic_Prosperity
+		}
+	}
+	focus = {
+		id = Number_1_Medical_Lead
+		icon = GFX_goal_unknown
+		x = 5
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Increase_Health_spending
+		}
+	}
+	focus = {
+		id = Economic_Crash_Of_2066
+		icon = GFX_goal_unknown
+		x = 4
+		y = 11
+		cost = 10
+		completion_reward = {}
+		available = {
+			NOT = {
+				has_idea = federal_economy
+			}
+		}
+	}
+	focus = {
+		id = Oh_God
+		icon = GFX_goal_unknown
+		x = 4
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Economic_Crash_Of_2066
+		}
+	}
+	focus = {
+		id = Pump_More_Money_In
+		icon = GFX_goal_unknown
+		x = 0
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Oh_God
+		}
+	}
+	focus = {
+		id = Institute_Bonds
+		icon = GFX_goal_unknown
+		x = 2
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Oh_God
+		}
+	}
+	focus = {
+		id = Beg_Investors
+		icon = GFX_goal_unknown
+		x = 4
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Oh_God
+		}
+	}
+	focus = {
+		id = Ban_AI_Data_Center_Construction
+		icon = GFX_goal_unknown
+		x = 6
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Oh_God
+		}
+	}
+	focus = {
+		id = Create_Social_Jobs
+		icon = GFX_goal_unknown
+		x = 8
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Oh_God
+		}
+	}
+	focus = {
+		id = Take_Massive_European_Loans
+		icon = GFX_goal_unknown
+		x = 0
+		y = 15
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Pump_More_Money_In
+		}
+	}
+	focus = {
+		id = Adopt_The_Euro
+		icon = GFX_goal_unknown
+		x = 1
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Take_Massive_European_Loans
+		}
+		prerequisite = {
+			focus = Create_A_New_Federal_Bank
+		}
+	}
+	focus = {
+		id = Create_A_New_Federal_Bank
+		icon = GFX_goal_unknown
+		x = 2
+		y = 15
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Institute_Bonds
+		}
+	}
+	focus = {
+		id = Default_On_Debt
+		icon = GFX_goal_unknown
+		x = 4
+		y = 15
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Beg_Investors
+		}
+	}
+	focus = {
+		id = Rebuild_America
+		icon = GFX_goal_unknown
+		x = 3
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Default_On_Debt
+		}
+		prerequisite = {
+			focus = Create_A_New_Federal_Bank
+		}
+	}
+	focus = {
+		id = Steal_Quebecian_Eletrical_Industry
+		icon = GFX_goal_unknown
+		x = 6
+		y = 15
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Ban_AI_Data_Center_Construction
+		}
+	}
+	focus = {
+		id = Create_Useless_Jobs
+		icon = GFX_goal_unknown
+		x = 8
+		y = 15
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Create_Social_Jobs
+		}
+	}
+	focus = {
+		id = The_4_Year_Plan
+		icon = GFX_goal_unknown
+		x = 7
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Create_Useless_Jobs
+		}
+		prerequisite = {
+			focus = Steal_Quebecian_Eletrical_Industry
+		}
+	}
+	focus = {
+		id = Bring_Tax_To_Zero
+		icon = GFX_goal_unknown
+		x = 5
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Default_On_Debt
+		}
+		prerequisite = {
+			focus = Steal_Quebecian_Eletrical_Industry
+		}
+	}
+	focus = {
+		id = Inflate_The_Economy
+		icon = GFX_goal_unknown
+		x = 6
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Bring_Tax_To_Zero
+		}
+		prerequisite = {
+			focus = The_4_Year_Plan
+		}
+	}
+	focus = {
+		id = Intertwined_with_Europe
+		icon = GFX_goal_unknown
+		x = 2
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Adopt_The_Euro
+		}
+		prerequisite = {
+			focus = Rebuild_America
+		}
+	}
+	focus = {
+		id = Slow_Recovery
+		icon = GFX_goal_unknown
+		x = 4
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Intertwined_with_Europe
+		}
+		prerequisite = {
+			focus = Inflate_The_Economy
+		}
+	}
+}
