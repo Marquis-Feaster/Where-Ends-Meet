@@ -1,3 +1,0 @@
-FOA = "countries/Federation Of America.txt"
-FOC = "countries/Federation Of Canada.txt"
-PGQ = "countries/Provisional Government Of Quebec.txt"
