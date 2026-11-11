@@ -1750,6 +1750,9 @@ focus_tree = {
 		y = 9
 		cost = 10
 		completion_reward = {}
+		available = {
+			always = no
+		}
 	}
 	focus = {
 		id = The_Dunson_Administrations_Second_Term
@@ -1760,6 +1763,9 @@ focus_tree = {
 		completion_reward = {}
 		prerequisite = {
 			focus = 2064_Election_Results
+		}
+		available = {
+			always = no
 		}
 	}
 	focus = {
@@ -1772,6 +1778,9 @@ focus_tree = {
 		prerequisite = {
 			focus = 2064_Election_Results
 		}
+		available = {
+			always = no
+		}
 	}
 	focus = {
 		id = The_Trump_Administration
@@ -1782,6 +1791,9 @@ focus_tree = {
 		completion_reward = {}
 		prerequisite = {
 			focus = 2064_Election_Results
+		}
+		available = {
+			always = no
 		}
 	}
 	focus = {
@@ -1893,6 +1905,9 @@ focus_tree = {
 		prerequisite = {
 			focus = The_2068_Election
 		}
+		available = {
+			always = no
+		}
 	}
 	focus = {
 		id = The_Harr_Administrations_Second_Term
@@ -1903,6 +1918,9 @@ focus_tree = {
 		completion_reward = {}
 		prerequisite = {
 			focus = The_2068_Election
+		}
+		available = {
+			always = no
 		}
 	}
 	focus = {
@@ -1915,6 +1933,9 @@ focus_tree = {
 		prerequisite = {
 			focus = The_2068_Election
 		}
+		available = {
+			always = no
+		}
 	}
 	focus = {
 		id = The_2068_Election
@@ -1923,6 +1944,9 @@ focus_tree = {
 		y = 16
 		cost = 10
 		completion_reward = {}
+		available = {
+			always = no
+		}
 	}
 	focus = {
 		id = One_Party_Rule
@@ -1988,6 +2012,484 @@ focus_tree = {
 		completion_reward = {}
 		prerequisite = {
 			focus = Tariff_Increases
+		}
+	}
+	focus = {
+		id = Economic_Prosperity
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		cost = 10
+		completion_reward = {}
+	}
+	focus = {
+		id = Pump_Money_Into_The_Military
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Economic_Prosperity
+		}
+	}
+	focus = {
+		id = The_American_Industrial_Complex
+		icon = GFX_goal_unknown
+		x = 2
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Pump_Money_Into_The_Military
+		}
+	}
+	focus = {
+		id = Invest_In_Asian_Technology
+		icon = GFX_goal_unknown
+		x = 5
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Economic_Prosperity
+		}
+	}
+	focus = {
+		id = The_Second_Chinese_Civil_War
+		icon = GFX_goal_unknown
+		x = 7
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Economic_Prosperity
+		}
+	}
+	focus = {
+		id = Invest_In_Taiwan
+		icon = GFX_goal_unknown
+		x = 6
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Invest_In_Asian_Technology
+		}
+		prerequisite = {
+			focus = The_Second_Chinese_Civil_War
+		}
+	}
+	focus = {
+		id = Invest_In_China
+		icon = GFX_goal_unknown
+		x = 8
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Second_Chinese_Civil_War
+		}
+	}
+	focus = {
+		id = More_Jobs_More_Money
+		icon = GFX_goal_unknown
+		x = 2
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_American_Industrial_Complex
+		}
+	}
+	focus = {
+		id = Yes_Tariffs_No_Taxes
+		icon = GFX_goal_unknown
+		x = 4
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Pump_Money_Into_The_Military
+		}
+		prerequisite = {
+			focus = Invest_In_Asian_Technology
+		}
+	}
+	focus = {
+		id = Japanese_Cooperation
+		icon = GFX_goal_unknown
+		x = 6
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Invest_In_Taiwan
+		}
+	}
+	focus = {
+		id = Russian_Oil
+		icon = GFX_goal_unknown
+		x = 8
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Invest_In_China
+		}
+	}
+	focus = {
+		id = Invite_Persian_Leaders
+		icon = GFX_goal_unknown
+		x = 8
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Russian_Oil
+		}
+	}
+	focus = {
+		id = Federal_Oil_Deal
+		icon = GFX_goal_unknown
+		x = 8
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Invite_Persian_Leaders
+		}
+	}
+	focus = {
+		id = The_American_Dream
+		icon = GFX_goal_unknown
+		x = 4
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Yes_Tariffs_No_Taxes
+		}
+	}
+	focus = {
+		id = Bubble_I_Dont_Think_So
+		icon = GFX_goal_unknown
+		x = 0
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_Drone_Bubble
+		}
+	}
+	focus = {
+		id = Invest_In_Drones
+		icon = GFX_goal_unknown
+		x = 0
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Bubble_I_Dont_Think_So
+		}
+	}
+	focus = {
+		id = Dakota_Data_Centers
+		icon = GFX_goal_unknown
+		x = 1
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Invest_In_Drones
+		}
+		prerequisite = {
+			focus = More_Jobs_More_Money
+		}
+	}
+	focus = {
+		id = Increase_Health_spending
+		icon = GFX_goal_unknown
+		x = 5
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = The_American_Dream
+		}
+		prerequisite = {
+			focus = Japanese_Cooperation
+		}
+	}
+	focus = {
+		id = Invest_In_Education
+		icon = GFX_goal_unknown
+		x = 2
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Dakota_Data_Centers
+		}
+	}
+	focus = {
+		id = Peace_On_Poverty
+		icon = GFX_goal_unknown
+		x = 0
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Dakota_Data_Centers
+		}
+	}
+	focus = {
+		id = The_Drone_Bubble
+		icon = GFX_goal_unknown
+		x = 0
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Economic_Prosperity
+		}
+	}
+	focus = {
+		id = Number_1_Medical_Lead
+		icon = GFX_goal_unknown
+		x = 5
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Increase_Health_spending
+		}
+	}
+	focus = {
+		id = Economic_Crash_Of_2066
+		icon = GFX_goal_unknown
+		x = 4
+		y = 11
+		cost = 10
+		completion_reward = {}
+	}
+	focus = {
+		id = Oh_God
+		icon = GFX_goal_unknown
+		x = 4
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Economic_Crash_Of_2066
+		}
+	}
+	focus = {
+		id = Pump_More_Money_In
+		icon = GFX_goal_unknown
+		x = 0
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Oh_God
+		}
+	}
+	focus = {
+		id = Institute_Bonds
+		icon = GFX_goal_unknown
+		x = 2
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Oh_God
+		}
+	}
+	focus = {
+		id = Beg_Investors
+		icon = GFX_goal_unknown
+		x = 4
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Oh_God
+		}
+	}
+	focus = {
+		id = Ban_AI_Data_Center_Construction
+		icon = GFX_goal_unknown
+		x = 6
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Oh_God
+		}
+	}
+	focus = {
+		id = Create_Social_Jobs
+		icon = GFX_goal_unknown
+		x = 8
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Oh_God
+		}
+	}
+	focus = {
+		id = Take_Massive_European_Loans
+		icon = GFX_goal_unknown
+		x = 0
+		y = 15
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Pump_More_Money_In
+		}
+	}
+	focus = {
+		id = Adopt_The_Euro
+		icon = GFX_goal_unknown
+		x = 1
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Take_Massive_European_Loans
+		}
+		prerequisite = {
+			focus = Create_A_New_Federal_Bank
+		}
+	}
+	focus = {
+		id = Create_A_New_Federal_Bank
+		icon = GFX_goal_unknown
+		x = 2
+		y = 15
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Institute_Bonds
+		}
+	}
+	focus = {
+		id = Default_On_Debt
+		icon = GFX_goal_unknown
+		x = 4
+		y = 15
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Beg_Investors
+		}
+	}
+	focus = {
+		id = Rebuild_America
+		icon = GFX_goal_unknown
+		x = 3
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Default_On_Debt
+		}
+		prerequisite = {
+			focus = Create_A_New_Federal_Bank
+		}
+	}
+	focus = {
+		id = Steal_Quebecian_Eletrical_Industry
+		icon = GFX_goal_unknown
+		x = 6
+		y = 15
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Ban_AI_Data_Center_Construction
+		}
+	}
+	focus = {
+		id = Create_Useless_Jobs
+		icon = GFX_goal_unknown
+		x = 8
+		y = 15
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Create_Social_Jobs
+		}
+	}
+	focus = {
+		id = The_4_Year_Plan
+		icon = GFX_goal_unknown
+		x = 7
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Create_Useless_Jobs
+		}
+		prerequisite = {
+			focus = Steal_Quebecian_Eletrical_Industry
+		}
+	}
+	focus = {
+		id = Bring_Tax_To_Zero
+		icon = GFX_goal_unknown
+		x = 5
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Default_On_Debt
+		}
+		prerequisite = {
+			focus = Steal_Quebecian_Eletrical_Industry
+		}
+	}
+	focus = {
+		id = Inflate_The_Economy
+		icon = GFX_goal_unknown
+		x = 6
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Bring_Tax_To_Zero
+		}
+		prerequisite = {
+			focus = The_4_Year_Plan
+		}
+	}
+	focus = {
+		id = Intertwined_with_Europe
+		icon = GFX_goal_unknown
+		x = 2
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Adopt_The_Euro
+		}
+		prerequisite = {
+			focus = Rebuild_America
+		}
+	}
+	focus = {
+		id = Slow_Recovery
+		icon = GFX_goal_unknown
+		x = 4
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Intertwined_with_Europe
+		}
+		prerequisite = {
+			focus = Inflate_The_Economy
 		}
 	}
 }
