@@ -1,0 +1,21 @@
+add_namespace = FOA_Events
+country_event = {
+	id = FOA_Events.1
+	title = FOA_Events.1.t
+	desc = FOA_Events.1.d
+	picture = GFX_report_event_FOA_Events_1
+	option = {
+		name = The_Bear
+		complete_national_focus = The_Bear
+	}
+	timeout_days = 30
+	option = {
+		name = The_Dragon
+		complete_national_focus = The_Dragon
+	}
+	option = {
+		name = The_Gazelle
+		complete_national_focus = The_Gazelle
+	}
+	is_triggered_only = yes
+}
