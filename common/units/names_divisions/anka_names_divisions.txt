@@ -1,0 +1,10 @@
+FOA_infantry = {
+	name = "FOA_infantry"
+	for_countries = { FOA }
+	division_types = { "Infantry" }
+	can_use = {
+		always = yes
+	}
+	fallback_name = "%d. Division"
+	ordered = {}
+}
