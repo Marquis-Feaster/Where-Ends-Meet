@@ -1,0 +1,24 @@
+characters = {
+	FOC_Canadian_Federal_Congress = {
+		name = FOC_Canadian_Federal_Congress
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FOC_Canadian_Federal_Congress
+				small = GFX_portrait_FOC_Canadian_Federal_Congress_small
+			}
+			army = {
+				large = GFX_portrait_FOC_Canadian_Federal_Congress_army
+				small = GFX_portrait_FOC_Canadian_Federal_Congress_army_small
+			}
+			navy = {
+				large = GFX_portrait_FOC_Canadian_Federal_Congress_navy
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+			traits = { INS_federal_parliament }
+			id = -1
+		}
+	}
+}
