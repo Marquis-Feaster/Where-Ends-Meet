@@ -1,0 +1,39 @@
+division_template = {
+	name = "Light Division"
+	division_names_group = FOA_infantry
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		hq_infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 0
+			y = 3
+		}
+		infantry = {
+			x = 0
+			y = 4
+		}
+		medium_sp_artillery_brigade = {
+			x = 1
+			y = 0
+		}
+		medium_sp_artillery_brigade = {
+			x = 1
+			y = 1
+		}
+		medium_sp_artillery_brigade = {
+			x = 1
+			y = 2
+		}
+	}
+}
+units = {}
