@@ -1,0 +1,14 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_idea_Chinese_Intervention"
+		texturefile = "gfx/interface/ideas/Chinese_Intervention.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_federal_ideals"
+		texturefile = "gfx/interface/ideas/federal_ideals.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_european_protector"
+		texturefile = "gfx/interface/ideas/european_protector.dds"
+	}
+}

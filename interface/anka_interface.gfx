@@ -1,0 +1,18 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_Where_ends_Meet_banner"
+		texturefile = "gfx/interface/Where_ends_Meet_banner.dds"
+	}
+	SpriteType = {
+		name = "GFX_Where_ends_Meet_banner_2"
+		texturefile = "gfx/interface/Where_ends_Meet_banner_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_Where_ends_Meet_banner_3"
+		texturefile = "gfx/interface/Where_ends_Meet_banner_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_Where_ends_Meet_banner_4"
+		texturefile = "gfx/interface/Where_ends_Meet_banner_4.dds"
+	}
+}

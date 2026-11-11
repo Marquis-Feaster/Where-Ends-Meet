@@ -1,0 +1,138 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_focus_Dawn_Of_A_New_Decade"
+		texturefile = "gfx/interface/goals/Dawn_Of_A_New_Decade.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_General_Report_2060"
+		texturefile = "gfx/interface/goals/General_Report_2060.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_The_Bear"
+		texturefile = "gfx/interface/goals/The_Bear.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Whipping_Up_Europe"
+		texturefile = "gfx/interface/goals/Whipping_Up_Europe.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_The_Dragon"
+		texturefile = "gfx/interface/goals/The_Dragon.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_The_Gazelle"
+		texturefile = "gfx/interface/goals/The_Gazelle.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Another_Billion_To_Israel"
+		texturefile = "gfx/interface/goals/Another_Billion_To_Israel.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_The_One_True_China"
+		texturefile = "gfx/interface/goals/The_One_True_China.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Operation_Thinkable"
+		texturefile = "gfx/interface/goals/Operation_Thinkable.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_The_True_World_Threat"
+		texturefile = "gfx/interface/goals/The_True_World_Threat.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Legacy_Of_The_Boxers"
+		texturefile = "gfx/interface/goals/Legacy_Of_The_Boxers.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Cut_Israeli_Funding"
+		texturefile = "gfx/interface/goals/Cut_Israeli_Funding.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Pull_Out_Of_Asia"
+		texturefile = "gfx/interface/goals/Pull_Out_Of_Asia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Blockade_The_Russians"
+		texturefile = "gfx/interface/goals/Blockade_The_Russians.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Increased_Carrier_Output"
+		texturefile = "gfx/interface/goals/Increased_Carrier_Output.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Missile_Strikes"
+		texturefile = "gfx/interface/goals/Missile_Strikes.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Operation_Black_Gold"
+		texturefile = "gfx/interface/goals/Operation_Black_Gold.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Fund_New_Drones"
+		texturefile = "gfx/interface/goals/Fund_New_Drones.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Jungle_Tactics"
+		texturefile = "gfx/interface/goals/Jungle_Tactics.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Bearing_The_Cold"
+		texturefile = "gfx/interface/goals/Bearing_The_Cold.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Revenge_For_49"
+		texturefile = "gfx/interface/goals/Revenge_For_49.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Saving_The_Holy_Land"
+		texturefile = "gfx/interface/goals/Saving_The_Holy_Land.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Focus_All_In_On_Asia"
+		texturefile = "gfx/interface/goals/Focus_All_In_On_Asia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_All_To_Israel"
+		texturefile = "gfx/interface/goals/All_To_Israel.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_No_Man_Left_Behind"
+		texturefile = "gfx/interface/goals/No_Man_Left_Behind.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Save_Taiwan"
+		texturefile = "gfx/interface/goals/Save_Taiwan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Resume_Israeli_Funding"
+		texturefile = "gfx/interface/goals/Resume_Israeli_Funding.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Revigourate_Europe"
+		texturefile = "gfx/interface/goals/Revigourate_Europe.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Operation_Falling_Star"
+		texturefile = "gfx/interface/goals/Operation_Falling_Star.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_The_Federal_Address"
+		texturefile = "gfx/interface/goals/The_Federal_Address.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Personnal_Ties"
+		texturefile = "gfx/interface/goals/Personnal_Ties.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Dunsons_Revenge"
+		texturefile = "gfx/interface/goals/Dunsons_Revenge.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Dunsons_Plan"
+		texturefile = "gfx/interface/goals/Dunsons_Plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Dunson_Of_Arabia"
+		texturefile = "gfx/interface/goals/Dunson_Of_Arabia.dds"
+	}
+}

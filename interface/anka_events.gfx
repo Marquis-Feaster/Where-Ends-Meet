@@ -1,0 +1,10 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_report_event_Theater_Focus_1"
+		texturefile = "gfx/event_pictures/Theater_Focus_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_FOA_Events_1"
+		texturefile = "gfx/event_pictures/FOA_Events_1.dds"
+	}
+}
