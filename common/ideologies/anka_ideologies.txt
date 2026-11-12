@@ -1,0 +1,141 @@
+ideologies = {
+	Conservative = {
+		color = { 102 0 0 }
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = no
+		}
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 0.5
+		ai_democratic = yes
+		types = {
+			Trumpism = {
+				color = { 255 0 0 }
+			}
+			Vancism = {
+				color = { 128 64 64 }
+			}
+		}
+	}
+	Liberal = {
+		color = { 2 143 168 }
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = yes
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = no
+			can_guarantee_other_ideologies = yes
+			can_only_justify_war_on_threat_country = no
+		}
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 0.5
+		ai_democratic = yes
+		types = {
+			Harrism = {
+				color = { 0 64 128 }
+			}
+		}
+	}
+	Patriot = {
+		color = { 153 102 145 }
+		rules = {
+			can_send_volunteers = yes
+			can_puppet = no
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = no
+		}
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 0.5
+		ai_neutral = yes
+		types = {
+			Americanism = {
+				color = { 0 128 128 }
+			}
+			Quebecism = {
+				color = { 64 128 128 }
+			}
+		}
+	}
+	Federalism = {
+		color = { 255 245 72 }
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = no
+		}
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 0.5
+		ai_democratic = yes
+		types = {
+			American_Federalism = {
+				color = { 255 255 0 }
+			}
+		}
+	}
+	Socialism = {
+		color = { 210 104 104 }
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = no
+		}
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 0.5
+		ai_communist = yes
+		types = {
+			Classical_Socialism = {}
+			Neo_Socialism = {}
+		}
+	}
+	Militia = {
+		color = { 255 206 206 }
+		rules = {
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = no
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = no
+		}
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 0.5
+		ai_neutral = yes
+		types = {
+			Pirates = {
+				color = { 195 6 60 }
+			}
+		}
+	}
+	Parlimentary_Federation = {
+		color = { 63 142 49 }
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = no
+		}
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 0.5
+		ai_democratic = yes
+		types = {
+			Canadian_Parlimentaryism = {}
+		}
+	}
+}
